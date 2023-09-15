@@ -1,1 +1,1 @@
-# ui-automation-with-selenium
+# ui-automation-using-selenium
