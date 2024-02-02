@@ -3,6 +3,7 @@ package registeration;
 import base.BaseTests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.HomePage;
 import pages.RegisterationPage;
 
 public class RegisterationUnSuccessfulTests extends BaseTests
@@ -10,9 +11,9 @@ public class RegisterationUnSuccessfulTests extends BaseTests
     @Test
     public void registerationUnSuccessfulTests() throws Exception
     {
-
+        HomePage homePage = new HomePage(BaseTests.driver);
+        homePage.clickRegisterLink();
         RegisterationPage registerationPage = new RegisterationPage(BaseTests.driver);
-        registerationPage.clickRegisterLink();
         registerationPage.selectGender();
         registerationPage.setFirstNameField("Engy");
         registerationPage.setLastNameField("Ashraf");

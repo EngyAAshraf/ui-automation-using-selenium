@@ -16,7 +16,6 @@ public class RegisterationPage
     private By newsletterSelected = By.name("Newsletter");
     private By passwordField = By.id("Password");
     private By confirmPasswordField = By.id("ConfirmPassword");
-    private By registerLink = By.xpath("/html/body/div[6]/div[1]/div[1]/div[2]/div[1]/ul/li[1]/a");
     private By registerButton = By.id("register-button");
     private By continueButton = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/div[2]/a");
     private By successMsg = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]");
@@ -27,10 +26,7 @@ public class RegisterationPage
     {
         this.driver = driver;
     }
-    public void clickRegisterLink()
-    {
-        driver.findElement(registerLink).click();
-    }
+
     public void selectGender()
     {
         driver.findElement(genderField).click();

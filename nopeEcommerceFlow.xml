@@ -7,6 +7,8 @@
             <class name="registeration.RegisterationUnSuccessfulTests"/>
             <class name="login.LoginSuccessfulTests"/>
             <class name="login.LoginUnSuccessfulTests"/>
+            <class name="products.SearchForProductTests"/>
+            <class name="products.AddProductToCartTests"/>
         </classes>
     </test>
 </suite>
